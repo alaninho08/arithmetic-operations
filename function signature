@@ -1,0 +1,30 @@
+// FUNCTION'S SIGNATURE
+
+// a function can share the same name (ex: void pizza) but need to operate with a different set of parameters
+// A function's name + its parameters is what we call a function's signature
+
+
+
+#include <iostream>
+using namespace std;
+
+
+void bakePizza();
+void bakePizza(string topping1);
+void bakePizza(string topping1, string topping2);
+
+int main () {
+bakePizza("peperonni", "mushrooms");
+return 0;
+}
+void bakePizza() {
+cout << "Here is your pizza!\n";
+}
+void bakePizza(string topping1) {
+cout << "Here is your " << topping1 << " pizza!\n";
+}
+
+void bakePizza(std::string topping1, string topping2) {
+cout << "Here is your " << topping1 << " and " << topping2 << " pizza!\n";
+
+}
