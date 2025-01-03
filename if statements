@@ -1,0 +1,76 @@
+#include <iostream>
+
+// If STATEMENTS
+int main()
+
+int age;
+std::cout << "Enter your age";
+std::cin >> age;
+
+if(age>=18) {
+    cout << "Welcome to the site!";
+}
+else if (age < 0) {
+    std::cout << "You are not born yet".
+}
+else {
+    std::cout << "Sorry, you are too young to enter this website."
+}
+
+{
+    std::cout << "Hello, World!" << std::endl;
+    return 0;
+}
+
+
+
+// faster way than if statements, TERNARY OPERATORS
+// allows a response for true or false events
+
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+int main () {
+    //int grade = 60;
+    //   (grade >=60) ? cout << "You've passed!" :  cout << "You failed!";
+
+    // int number = 9;
+    // number %2 == 1? cout <<"ODD" : cout << "even";
+
+    bool hungry = true;
+
+    //  hungry? cout << " You are hungry" : cout << "You are full";
+    cout << (hungry? "You are hungry" : "You are full");
+    return 0;
+}
+
+// C O N D I T I O N statements
+int main () {
+
+    // && = check if 2 operations are true
+    // || = check if at least if one of the conditions are true
+    // ! = reverse the logical state of its operand
+
+    int temp;
+    bool sunny = false;
+
+    cout << "Enter the temperature: ";
+    cin >> temp;
+
+    if (temp <= 0  || temp >=30) {
+        cout << "The temperature is bad!\n";
+
+    }
+    else {
+        cout << "The temperature is good.\n";
+    }
+    if (!sunny) {
+        cout << "It is cloudy outside";
+
+    }
+    else {
+        cout << "It is sunny outside" ;
+    }
+    return 0;
+}
