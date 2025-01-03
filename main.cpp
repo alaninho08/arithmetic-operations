@@ -1,27 +1,38 @@
 #include <iostream>
-using namespace std;
 
-int main() {
-    double temp;
-    char unit;
-    double celsius;
-    double fahrenheit;
-    cout << "Convert to Fahrenheit (F) or Celsius (C) ?";
-    cin >> unit;
+int main()
+{
+    //whole numbers
+    short
+    int;
+    long;
 
-    if (unit == 'F' || unit == 'f') {
-        cout << "Enter temperature in Celsius: ";
-        cin >> celsius;
-        cout << "Temperature in Fahreinheit = " << (1.8 * celsius) + 32.0;
-    }
+    // decimal numbers {
+    float;
+    //double;
 
-    if (unit == 'C' || unit == 'c') {
-        cout << "Enter temperature in fahrenheit: ";
-        cin >> fahrenheit;
-        cout << "The temperature in fahrenheit = " << (fahrenheit - 32) / 1.8;
-    }
-else {
-    cout << " You can only convert between Fahrenheit and celsius";
-}
+    // boolean (true or false)
+    bool student = true/false;
+    bool light = false;
+
+    // single characters
+
+    char letter = 'A';
+    char grade = 'C';
+    char currency = '$';
+
+    // Strings that represents a sequence of characters
+    std::string name = "Alaninho_08";
+    std::string day = "15";
+    std::string food = "spaghetti";
+    std::string adress = "1137, rue du plateau";
+
+
+    // using constants
+    //ex:
+    const double PI = 3.14;
+    const double lightSpeed = 299792458;
+    const int length = 987;
+    const int width = 1000;
     return 0;
 }
