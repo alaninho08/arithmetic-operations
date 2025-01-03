@@ -1,0 +1,21 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+int main () {
+    int x = 3.;
+    double y = 7;
+    double z;
+
+    // z = max(x, y);
+    // z = min(x, y);
+    //z = pow(2, 4);
+    // z = sqrt(25);
+    // z = abs(-7);
+    // z = round (x);
+    // z = ceil(x);
+    // z = floor(x);
+    cout << x;
+
+    return 0;
+}
