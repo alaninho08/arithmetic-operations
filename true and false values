@@ -1,0 +1,26 @@
+#include <iostream>
+using namespace std;
+
+
+int main(){
+    int variab{123};
+    cout << "variab: " << variab << endl;
+    variab = 45;
+
+    cout << "variab : " << variab << endl;
+    cout << "------------------------" << endl;
+
+    float variab2 {35.59};
+    cout << variab2 << endl;
+    variab2 = 47.85;
+    cout << variab2 << endl;
+    // bool alpha allows you to store true/false values instead of 0's and 1
+    bool state{false};
+    cout << boolalpha;
+    cout << state << endl;
+
+    state = true;
+    cout << state << endl;
+
+    return 0;
+}
