@@ -1,0 +1,31 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main () {
+    // Printing data
+    /*int age{21};
+    cout << "Age: " << age << endl;
+
+    cerr << "Error message: Something is wrong" << endl;
+    clog << "Log message: Something happened" << endl;
+*/
+    /*
+    int age1;
+    string name;
+    cout << "Please type your name and age: ";
+    //cin >> name;
+    //cin >> age1;
+    cin >> name >> age1;
+    cout << "Hello " << name << " You are " << age1 <<  " years old " << endl;
+*/
+    // data w/ spaces
+    string family_name;
+    int age2;
+    cout << "Please type your full name and age: " << endl;
+    getline(cin, family_name);
+    cin >> age2;
+    cout << "Hello " << family_name
+         << " You are " << age2 <<  " years old " << endl;
+    return 0;
+}
