@@ -1,0 +1,78 @@
+#include <iostream>
+using namespace std;
+
+/* W H I L E - L O O P S
+ */
+int main () {
+    string name;
+    // if condition is true, repeat code in an infinite amount of time
+    // if condition becomes false, then program will get out of loop
+    while(name.empty()) {
+        cout << "Enter your name: ";
+        getline(cin, name);
+    }
+
+    cout << "Hello " << name;
+    return 0;
+}
+
+// D O - W H I L E  L O O P S
+#include <iostream>
+using namespace std;
+
+int main () {
+    // do while loop = run some code at first,
+    // THEN repeat again if condition is true
+    int number;
+
+    do{
+        cout << "Enter a positive #: ";
+        cin >> number;
+    }         while(number < 0);
+
+
+    cout << "The # is " << number;
+    return 0;
+}
+
+
+string username;
+
+while(username.empty()){
+    cout << "Specify your usename:  ";
+    cin >> username;
+}
+
+
+cout << " Your username is " << username;
+
+
+// F O R   L O O P S
+//(best to repeat code in a certain pre-determined amount of time)
+
+#include <iostream>
+using namespace std;
+
+int main () {
+    for(int index = 10; index >=0 ; index-=2) {
+        cout <<index << '\n';
+    }
+
+    cout << "Happy new year!\n";
+    return 0;
+}
+
+// B R E A K  AND  C O N T I N U E  (L O O P S)
+int main () {
+
+    // break = break out of a loop
+    // continue = skip current iteration
+    for(int index = 1; index <=20 ;  index++) {
+        if (index == 13) {
+            continue;
+        }
+        cout <<index << '\n';
+
+    }
+    return 0;
+}
