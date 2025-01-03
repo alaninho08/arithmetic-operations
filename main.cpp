@@ -1,52 +1,27 @@
 #include <iostream>
-#include <cmath>
 using namespace std;
 
-int main () {
-    char op;
-    double num1;
-    double num2;
-    double result;
+int main() {
+    double temp;
+    char unit;
+    double celsius;
+    double fahrenheit;
+    cout << "Convert to Fahrenheit (F) or Celsius (C) ?";
+    cin >> unit;
 
-    cout << "***************** CALCULATOR **********************************************" << endl <<
-        "Enter either (+, -, *, /):";
-    cin >> op;
-
-    cout << "Enter number 1: ";
-    cin >>  num1;
-
-    cout << "Enter number 2: ";
-    cin >> num2;
-
-    switch (op) {
-        case '+':
-            result = num1 + num2;
-        cout << "result:" << result << endl;
-        break;
-
-        case '-':
-            result = num1-num2;
-        cout << "result:" << result << endl;
-
-        break;
-
-        case '*':
-            result = num1*num2;
-        cout << "result:" << result << endl;
-
-        break;
-
-        case '/':
-            result = num1/num2;
-        cout << "result:" << result << endl;
-
-        break;
-
-        default:
-            cout << " That wasn't a valid response" << endl;;
-        break;
+    if (unit == 'F' || unit == 'f') {
+        cout << "Enter temperature in Celsius: ";
+        cin >> celsius;
+        cout << "Temperature in Fahreinheit = " << (1.8 * celsius) + 32.0;
     }
-    cout << "*************************************************";
 
+    if (unit == 'C' || unit == 'c') {
+        cout << "Enter temperature in fahrenheit: ";
+        cin >> fahrenheit;
+        cout << "The temperature in fahrenheit = " << (fahrenheit - 32) / 1.8;
+    }
+else {
+    cout << " You can only convert between Fahrenheit and celsius";
+}
     return 0;
 }
