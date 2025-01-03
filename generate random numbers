@@ -1,0 +1,61 @@
+#include <iostream>
+#include <cstdlib>
+#include <ctime>
+
+using namespace std;
+// B E T T E R  w a y
+int main () {
+
+  // pseudo-random = NOT truly random (but close)
+  srand(time(NULL));
+  int num1 = (rand() % 6) + 1;
+  int num2 = (rand() % 6) + 1;
+  int num3 = (rand() % 6) + 1;
+  cout << num1 << '\n' << num2 << '\n' << num3;
+  return 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+// More complex
+int main () {
+  int minValue = 1;
+  int maxValue = 6;
+  srand(time(0));
+  int numberFirst = (rand() % (maxValue - minValue + 1)) + minValue;
+  int numberSecond = (rand() % (maxValue - minValue + 1)) + minValue;
+  cout << numberFirst << ", " << numberSecond;
+  return 0;
+}
+
+// Giving prizes based on genarating some random numbers
+int main () {
+
+  srand(time(0));
+  int randNum = rand() % 5 + 1;
+
+  switch(randNum) {
+    case 1: cout << "You won a bumper sticker!\n";
+    break;
+    case 2: cout << "You won a t-shirt!\n";
+    break;
+    case 3: cout << "You won a cookie!\n";
+    break;
+    case 4: cout << "You won a trophy!\n";
+    break;
+    case 5: cout << "You won some tickets!\n";
+    break;
+
+
+    // If you want to give multiple prizes at the samr time,then take off the "break" function;
+  }
+  return 0;
+}
