@@ -1,0 +1,52 @@
+#include <iomanip>
+#include <iostream>
+using namespace std;
+
+
+int main() {
+    bool a = true;
+    bool b = true;
+    bool c = false;
+    cout << boolalpha;
+    cout <<"a&&c: " << (a&&c) << endl;
+    cout <<" a&&b: " << (a&&b) << endl;
+
+    // basic operations
+    cout <<"a||b: " << (a||b) << endl;
+    cout << "a||c: " << (a||c) << endl;
+
+    // combining of all these operators
+
+    // ex: !, &, ||
+
+    cout << "!a: " << (!a) << endl;
+    cout << "!a: " << (!c) << endl;
+    cout << "(!a(a||b) && c): " << (!(b||c) ||a) << endl;
+    // combining logical operators with relational operators
+
+    // First and foremost for && operand (False dominates)
+    /* a:true, b: false, a&&b: false.
+     * a: false,b:true, a&&b: false.
+     */
+    //Secondly, for || operand (True dominates)
+    /* a:true, b: false, a||b: true.
+     * a: false, b: true, a||b: true.
+     */
+    // Lastly, for the ! operand(the reverse of the function dominates)
+    /* a: true; !a: false.
+     * a: false; !a: true.
+     */
+    int d{57};
+    int e{75};
+    int f{102};
+    std::cout << "(d > e) && (d > f) : " << ((d > e) && (d > f)) << std::endl; // false
+    std::cout << "(d==e) || (e <= f ) : " << ((d==e) || (e <= f ) ) << std::endl; // true
+    std::cout << "(d < e) || (d > f) : " << ((d < e) || (d > f)) << std::endl;// true
+    std::cout << "(f > e) || (d < f) : " << ((f > e) || (d < f)) << std::endl;// true
+    std::cout << "(d > f) && (f <= d) : " << ((d > f) && (f <= d)) << std::endl;// false
+    std::cout << "(d > e) && (d <= f) : " << ((d > e) && (d <= f)) << std::endl;//false
+    std::cout << "(! a) && (d == e) : " << ((! a) && (d == e)) << std::endl;// false
+    std::cout << "(! a) && (d == e) : " << ((! a) && (d == e)) << std::endl;// false
+
+
+    return 0;
